@@ -7,3 +7,17 @@ contaDoAndre.conta = "1010-X";
 contaDoAndre.saldo = 100;
 
 Console.WriteLine("saldo da conta do André = " + contaDoAndre.saldo);
+
+contaDoAndre.Depositar(100);
+
+Console.WriteLine("Saldo da conta do André pós-deposito =" + contaDoAndre.saldo);
+
+if (contaDoAndre.Sacar(300) ==true)
+{
+    Console.WriteLine("Saldo da conta do André pós-saque =" + contaDoAndre.saldo);
+}
+else
+{
+    Console.WriteLine("Saldo insuficiente para saque");
+}
+
